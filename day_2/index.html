@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>DSA Expert</title>
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'
+      rel='stylesheet'
+    />
+    <link
+      rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css'
+    />
+    <link rel='stylesheet' href='./index.css' />
+  </head>
+  <body>
+    <div class='app-shell'>
+      <aside class='sidebar'>
+        <div class='brand'>
+          <div class='brand-icon'>
+            <i class='fa-solid fa-star'></i>
+          </div>
+          <div class='brand-text'>
+            <h1>Executive Suite</h1>
+            <p>Elite Partnership</p>
+          </div>
+        </div>
+
+        <button class='new-discussion-btn' type='button'>
+          <i class='fa-solid fa-circle-plus'></i>
+          New Discussion
+        </button>
+
+        <nav class='menu'>
+          <button class='menu-item active' type='button'>
+            <i class='fa-solid fa-circle-plus'></i>
+            New Chat
+          </button>
+          <button class='menu-item' type='button'>
+            <i class='fa-regular fa-clock-rotate-left'></i>
+            History
+          </button>
+          <button class='menu-item' type='button'>
+            <i class='fa-solid fa-chart-simple'></i>
+            Insights
+          </button>
+          <button class='menu-item' type='button'>
+            <i class='fa-solid fa-gear'></i>
+            Preferences
+          </button>
+        </nav>
+
+        <div class='sidebar-bottom'>
+          <button class='menu-item support' type='button'>
+            <i class='fa-regular fa-circle-question'></i>
+            Support
+          </button>
+          <button class='menu-item signout' type='button'>
+            <i class='fa-solid fa-arrow-right-from-bracket'></i>
+            Sign Out
+          </button>
+        </div>
+      </aside>
+
+      <main class='main-content'>
+        <header class='topbar'>
+          <div class='topbar-left'>
+            <h2>DSA Expert</h2>
+            <span>Data Structure and Algorithm Expert</span>
+          </div>
+        </header>
+
+        <section class='chat-area'>
+          <p class='today-chip'>TODAY</p>
+          <div id='chatMessages' class='chat-messages'></div>
+
+          <div class='action-row'>
+            <button type='button' data-quick-prompt='Generate report'>
+              Generate Report
+            </button>
+            <button type='button' data-quick-prompt='Summarize key risks'>
+              Summarize Key Risks
+            </button>
+            <button type='button' data-quick-prompt='Export to PDF'>
+              Export to PDF
+            </button>
+          </div>
+        </section>
+
+        <footer class='prompt-area'>
+          <button type='button' class='attach-btn'>
+            <i class='fa-solid fa-paperclip'></i>
+          </button>
+          <input
+            id='chatInput'
+            type='text'
+            placeholder='Inquire about market insights or strategic analysis...'
+          />
+          <button type='button' class='mic-btn'>
+            <i class='fa-solid fa-microphone'></i>
+          </button>
+          <button id='sendBtn' type='button' class='send-btn'>
+            <i class='fa-solid fa-arrow-up'></i>
+          </button>
+        </footer>
+
+        <p class='powered-text'>Powered by Serene Intelligence • Enterprise Tier</p>
+      </main>
+    </div>
+
+    <script type='module' src='./DSA.js'></script>
+  </body>
+</html>
