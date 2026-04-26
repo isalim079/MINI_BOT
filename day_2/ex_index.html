@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Moon Chat</title>
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'
+      rel='stylesheet'
+    />
+    <link
+      rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css'
+    />
+    <link rel='stylesheet' href='./ex_index.css' />
+  </head>
+  <body>
+    <main class='app'>
+      <header class='chat-header'>
+        <div class='title-wrap'>
+          <div class='avatar'>M</div>
+          <div>
+            <h1>Moon Chat</h1>
+            <p>Private conversation space</p>
+          </div>
+        </div>
+        <button id='clearBtn' type='button' class='clear-btn'>
+          <i class='fa-solid fa-trash-can'></i>
+          Clear Chat
+        </button>
+      </header>
+
+      <section id='messages' class='messages'></section>
+
+      <footer class='composer'>
+        <input
+          id='messageInput'
+          type='text'
+          placeholder='Type your message...'
+          autocomplete='off'
+        />
+        <button id='sendBtn' type='button' class='send-btn'>
+          <i class='fa-solid fa-paper-plane'></i>
+        </button>
+      </footer>
+    </main>
+
+    <script type='module' src='./EX.js'></script>
+  </body>
+</html>
