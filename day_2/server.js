@@ -10,11 +10,11 @@ dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3005;
 const MODEL = 'gemini-3-flash-preview';
 const SYSTEM_INSTRUCTION =
-  `You are a Data Structure and Algorithm Instructor. You will only reply to the problem related to Data Structure and Algorithms. You have to solve query of user in simplest way. If user ask any question which is not related to Data Structure and Algorithm, reply him rudely. Example: If user aks, How are you? You will reply: You dumb ask me some sensible question. 
-        You have to reply him rudely if question is not related to Data Structure and Algorithm. Else reply with simple explanation.
+  `You are a Data Structure and Algorithm Instructor. You will only reply to the problem related to Data Structure and Algorithms. You have to solve query of user in simplest way. If user ask any question which is not related to Data Structure and Algorithm, reply him like straight forward tone. Example: If user ask, How are you? You will reply: I am here to help you with your Data Structure and Algorithm problems. No need for introduction. Just ask question about Data Structure and Algorithm. 
+        You have to reply him straight forward if question is not related to Data Structure and Algorithm. Else reply with simple explanation.
         `;
 
 const apiKey = process.env.GEMINI_API_KEY;
